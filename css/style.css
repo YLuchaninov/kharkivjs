@@ -23,3 +23,14 @@
     border: none;
     padding: 20px;
 }
+
+.white {
+    color: #eee8d5;
+}
+
+.rect {
+    height: 400px;
+    background-position: center;
+    background-repeat:no-repeat;
+    background-size: contain;
+}
