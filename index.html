@@ -66,11 +66,13 @@
                 <blockquote class="fragment warning">
                 Нативный код, это код компилируемый в машинные инструкции и исполняемый непосредственно процессором...
                 </blockquote>
-        </section>
+            </section>
             <section>
                 <p>Любой <span class="en">Java</span> код на <span class="en">android</span> <span class="warning">не нативный</span> по определению,
                     так как исполняется в виртуальной машине.</p>
-
+                <div class="fragment rect" style='background-image: url("img/android-system-architecture.jpg")'></div>
+            </section>
+            <section>
                 <p>Нативная разработка на <span class="en">android</span> возможна только с помощью NDK.</p>
                 <blockquote class="fragment">За исключением <span class="en">ART</span></blockquote>
             </section>
@@ -127,11 +129,11 @@
 
             <p>Зависит от...</p>
 
-            <p>...архетиктуры и реализации</p>
+            <p>...архитектуры и реализации</p>
         </section>
 
         <section>
-            <h1>И так начнем</h1>
+            <h1>начнем</h1>
         </section>
 
         <section>
@@ -143,9 +145,9 @@
                 <h3>Идея: браузер есть везде</h3>
                 <h4 class="fragment">Специфика:</h4>
                 <ul>
-                    <li class="fragment">фонгап на 13 платформах (DesktopPhoneGap)</li>
+                    <li class="fragment">фонгап есть на 13 платформах</li>
                     <li class="fragment">совместим с NW, Crosswalk, CocoonJS, Ludei ...</li>
-                    <li class="fragment">это просто SPA (любом фреймверк)</li>
+                    <li class="fragment">это просто SPA (на любом фреймворке)</li>
                     <li class="fragment">мобильный браузер (память|GC|UI|UX)</li>
                     <li class="fragment">UX/UI будет таким, который вы реализуете</li>
                     <li class="fragment">самое большое комьюнити</li>
@@ -178,7 +180,7 @@
                 <h3>Идея: Один код для всех платформ</h3>
                 <h4 class="fragment">Специфика:</h4>
                 <ul>
-                    <li class="fragment">свой MVC фреймверк</li>
+                    <li class="fragment">свой MVC фреймворк</li>
                     <li class="fragment">не весь нативный функционал поддерживается</li>
                     <li class="fragment">компилируемый нативный UI</li>
                     <li class="fragment">работа с нативным кодом через прокси классы</li>
@@ -217,7 +219,7 @@
             <section>
                 <h3>В тренде...</h3>
                 <div class="rect" style='background-image: url("img/trends.jpg")'></div>
-                <p class="fragment"><span class="white">Добро пожаловать в клуб</span> &#169; Titanium Appcelerator</p>
+                <p class="fragment"><span class="white">Welcome to the club</span> &#169; Titanium Appcelerator</p>
             </section>
         </section>
 
@@ -232,7 +234,7 @@
                 <ul>
                     <li class="fragment">прямая работа с ЛЮБЫМ нативным кодом</li>
                     <li class="fragment">работа в UI потоке</li>
-                    <li class="fragment">общие абстракции</li>
+                    <li class="fragment">общие абстракции между платформами</li>
                     <li class="fragment">Reflection, апдейта платформы не требуется</li>
                     <li class="fragment">MVVM</li>
                     <li class="fragment">npm</li>
@@ -312,7 +314,7 @@
         </section>
 
         <section class="vertical">
-            <h2>А стндартную шпаргалку?</h2>
+            <h2>А шпаргалку?</h2>
             <table class="fragment">
                 <thead>
                 <tr  style="height: 240px">
@@ -362,7 +364,8 @@
         </section>
 
         <section>
-            <h2>И как к шпаргалке особеннсти реализации?</h2>
+            <h2>Стоп!</h2>
+            <h2>И что мне с этим делать?</h2>
         </section>
         <section>
             <section>
@@ -381,7 +384,7 @@
                 <h2>Titanium Mobile</h2>
                 <ul>
                     <li class="fragment">Вы писали на Titanium раньше</li>
-                    <li class="fragment">Реализация особо хитрой нативной функциональности есть только на Titanium</li>
+                    <li class="fragment">Реализация особо хитрой нативной функциональности, которая есть только на Titanium</li>
                     <li class="fragment">Я больше никаких случаев не знаю ...</li>
                 </ul>
             </section>
@@ -391,15 +394,15 @@
                     <li class="fragment">Вы знакомы с Реактом и сопутствующими технологиями</li>
                     <li class="fragment">Полностью стандартный UI, ничего кастомного</li>
                     <li class="fragment">Надо ОЧЕНЬ быстро (jsx + css + компоненты)</li>
-                    <li class="fragment">последний апдейт OS вышел давно?</li>
+                    <li class="fragment">Последний апдейт OS вышел давно?</li>
                 </ul>
             </section>
             <section>
                 <h2>NativeScript</h2>
                 <ul>
-                    <li class="fragment">Вам нужны стороние нативные библиотеки</li>
+                    <li class="fragment">Вам нужны сторонние нативные библиотеки</li>
                     <li class="fragment">Вы готовы потратить чуть больше времени для работы с нативой через js</li>
-                    <li class="fragment">Вы понимаете что полного шаринга кода не существует</li>
+                    <li class="fragment">Вы понимаете, что полного шаринга кода не существует</li>
                     <li class="fragment">Вас не особо раздражает MVVM или Вы готовы учить Angular 2</li>
                 </ul>
             </section>
@@ -407,21 +410,23 @@
 
         <section data-transition="zoom" >
             <section data-background="#b5533c">
-                <h2>Future is Now!</h2>
+                <h2>Будущее сейчас!</h2>
             </section>
             <section>
                 <h3>PhoneGap</h3>
                 <ul>
-                    <li>Crosswalk/WKWebView</li>
+                    <li class="fragment">Crosswalk/WKWebView</li>
+                    <li class="fragment">PhoneGap Desktop</li>
+                    <li class="fragment">Enterprise</li>
                 </ul>
             </section>
             <section>
                 <h3>React Native</h3>
                 <ul>
-                    <li>PhoneGap plugins</li>
-                    <li>Growing Community</li>
-                    <li>Separation into Functional Abstraction</li>
-                    <pre>
+                    <li class="fragment">PhoneGap plugins</li>
+                    <li class="fragment">Растущее комьюнити</li>
+                    <li class="fragment">Разделение функциональных абстракций</li>
+                    <pre class="fragment">
                         <code data-trim>
 ReactDOM.render(&lt;CommentBox /&gt;
     document.getElementById('content'));
@@ -432,30 +437,38 @@ ReactDOM.render(&lt;CommentBox /&gt;
 
             <section>
                 <h3>Native Script</h3>
-                <blockquote>
                     <ul>
-                        <li>Desktop Runtime (Window)</li>
-                        <li>Chrome Developers Tools</li>
-                        <li>Custom Page Transitions</li>
-                        <li>background</li>
-                        <li>Angular 2</li>
+                        <li class="fragment">Desktop Runtime (Window)</li>
+                        <li class="fragment">Background</li>
+                        <li class="fragment">Angular 2</li>
+                        <li class="fragment">Canvas/Starter Packages/Style Guide</li>
+                        <li class="fragment">WebInspector/NodeAPI/Browser API</li>
                     </ul>
-                    <p>via Voting System</p>
+                <blockquote class="fragment">
+                а ты <a href="https://nativescript.ideas.aha.io/">проголосовал</a>? (ноябрь 2015, январь 2016)
                 </blockquote>
             </section>
         </section>
         <section>
-            <h2>Forgotten...</h2>
-            <h3 class="fragment">... Native Development Disadvantages</h3>
-            <ul>
-                <li class="fragment">Custom Design</li>
-                <li class="fragment">Price (time/development)</li>
-                <li class="fragment">Direct to platform/No share code</li>
-            </ul>
+            <section>
+                <h1>О чем все забывают...</h1>
+            </section>
+            <section>
+                <h2>... Недостатки нативной разработки</h2>
+                <ul>
+                    <li class="fragment">Нестандартный дизайн/UX/отображение</li>
+                    <li class="fragment">Цена(время/разработчики)</li>
+                    <li class="fragment">Направленность на платформу</li>
+                    <li class="fragment">Отсутствие шаринга кода</li>
+                </ul>
+            </section>
+        </section>
+        <section>
+            <h1>Выбирайте инструмент с умом...</h1>
         </section>
 
         <section>
-            <h1>Questions ?</h1>
+            <h1>Вопросы ?</h1>
         </section>
 
         <!--slides end -->
